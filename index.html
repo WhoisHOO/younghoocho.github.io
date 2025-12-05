@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Younghoo Cho | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f5f5f7;
+      color: #222;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      opacity: 0.85;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    nav {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav .inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4b5563;
+      padding: 0.25rem 0;
+    }
+    nav a:hover {
+      color: #111827;
+    }
+    section {
+      background: white;
+      margin-bottom: 1rem;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.1rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      background: #e5f0ff;
+      color: #1d4ed8;
+      margin-right: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+    .item-title {
+      font-weight: 600;
+    }
+    .item-sub {
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      padding: 2rem 1rem 3rem;
+    }
+    @media (max-width: 600px) {
+      header {
+        text-align: left;
+      }
+      nav .inner {
+        padding-inline: 1rem;
+      }
+      .container {
+        padding-inline: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Younghoo Henry Cho</h1>
+    <p>PhD student · Agricultural and Biological Engineering · University of Florida</p>
+  </header>
+
+  <nav>
+    <div class="inner">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a PhD student in the Agricultural and Biological Engineering Department at the University of Florida.
+        My research focuses on blockchain enabled data sharing and verification traceability in agriculture,
+        with applications in carbon markets, smart farming, and cross sector data infrastructure.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <p class="item-title">Verification traceability for agricultural data</p>
+      <p class="item-sub">Blockchain based infrastructure for data origin, transformation integrity, and system interoperability</p>
+      <p>
+        I develop a platform that allows agricultural datasets to preserve verifiable evidence of origin,
+        transformation history, and usage conditions as they move across heterogeneous environments.
+      </p>
+      <p>
+        <span class="tag">Blockchain</span>
+        <span class="tag">Agricultural data</span>
+        <span class="tag">Traceability</span>
+        <span class="tag">Data sharing</span>
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <p class="item-title">Agricultural data sharing platform</p>
+      <p class="item-sub">Open source implementation of DV, TI, and SI modules</p>
+      <p>
+        Ongoing project implementing verification traceability functions as reusable components
+        for agricultural data platforms and research workflows.
+      </p>
+
+      <p class="item-title">Fresh food supply chain and food loss accounting</p>
+      <p class="item-sub">Integration of tracking events, waste accounting, and Scope 3 GHG reporting</p>
+      <p>
+        Conceptual framework that connects product provenance, food loss and waste measurements,
+        and greenhouse gas accounting in retail and upstream supply chains.
+      </p>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching and Mentoring</h2>
+      <p>
+        I mentor undergraduate students in data driven agriculture and support graduate level courses
+        in process design and research proposal writing.
+      </p>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <p>
+        You can find my CV here:
+        <!-- 나중에 실제 파일 경로로 교체 -->
+        <a href="#" target="_blank" rel="noopener">Download CV (PDF)</a>
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:younghoo.cho@ufl.edu">younghoo.cho@ufl.edu</a></p>
+      <p>GitHub: <a href="https://github.com/WhoisHOO" target="_blank" rel="noopener">WhoisHOO</a></p>
+      <p>LinkedIn: <!-- 나중에 링크 있으면 넣기 --> </p>
+    </section>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Younghoo Henry Cho
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
